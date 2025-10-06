@@ -101,7 +101,7 @@ section.topo-do-site {
 }
 
 .topo-do-site h1:hover {
-    color: orange;
+    color: rgb(206, 197, 180);
 }
 
 .topo-do-site .txt-topo-do-site p {
@@ -112,26 +112,17 @@ section.topo-do-site {
 section.topo-do-site .txt-topo-do-site p span {
     color: orange;
 }
-
-/* Para a imagem ficar flutuando */
-
-.topo-do-site .img-topo-do-site img {
-    position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate;
+.img-topo-do-site img {
+    width: 350px;
+    height: auto;
+    border-radius: 5%;
 }
-
-@keyframes flutuar {
-    0% {
-        top: 0;
-    }
-
-    100% {
-        top: 30px;
-    }
+:hover.img-topo-do-site img {
+    box-shadow: 0px 0px 8px rgb(255, 255, 255);
+    transform: scale(1.05);
+    transition: .3s;
 }
-
-/* Para a imagem ficar flutuando */
-
+/* END topo do site */
 /* SOBRE */
 section.sobre {
     padding: 100px 3%;
@@ -153,7 +144,7 @@ section.sobre .flex {
 }
 
 .sobre .texto-sobre h2 span {
-    color: orange;
+    color: rgb(252, 252, 252);
     display: block;
 }
 
@@ -167,11 +158,11 @@ section.sobre .flex {
     height: 60px;
     border-radius: 50%;
     border: 0;
-    background-color: orange;
+    background-color: rgb(218, 192, 146);
     font-size: 21px;
     cursor: pointer;
     margin: 0 3px;
-    box-shadow: 0px 0px 8px orange;
+    box-shadow: 0px 0px 8px rgb(255, 255, 255);
 }
 
 .jmsocial button:hover {
@@ -190,6 +181,7 @@ footer {
     width: 100%;
     padding: 20px 0;
     background-color: black;
+    text-decoration: none;
 }
 
 .rodape-container {
@@ -203,12 +195,27 @@ footer {
     /* Mantém tudo centralizado */
     gap: 15px;
 }
-
+.contato a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    color: rgb(177, 169, 156);
+}
+:hover.contato a {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+    transition: .3s;
+    
+}
 
 .linha-divisoria {
     width: 80%;
     height: 2px;
-    background-color: orange;
+    background-color: rgb(177, 169, 156);
     border: none;
     margin: 10px 0;
 }
@@ -221,12 +228,12 @@ footer .flex {
 
 footer .linha-abaixo {
     padding: 23px 0;
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid rgb(167, 161, 150);
     border-top: 20px;
 }
 
 footer .linha-abaixo p i {
-    color: orange;
+    color: rgb(185, 180, 171);
     font-size: 20px;
 
 }
